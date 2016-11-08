@@ -1,0 +1,125 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="size_dialog_title_text">20sp</dimen>
+    <dimen name="size_title_text">16sp</dimen>
+    <dimen name="size_text">15sp</dimen>
+    <dimen name="small_size_text">13sp</dimen>
+
+    <dimen name="height_line">1dp</dimen>
+    <dimen name="layout_radius">10dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_extra_micro">10sp</dimen>
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="fragment.online.item.textview.duration.text_size">13sp</dimen>
+    <dimen name="activity.main.textview.text_size">15sp</dimen>
+    <dimen name="fragment.online.item.textview.song.text_size">15sp</dimen>
+    <dimen name="fragment.offline.item.textview.text_size">15sp</dimen>
+    <dimen name="navigation.textview.text_size">15sp</dimen>
+    <dimen name="activity.main.toolbar.text_size">20sp</dimen>
+    <dimen name="activity.main.tablayout.text_size">20sp</dimen>
+    <dimen name="activity.splash.textview.content.text_size">25sp</dimen>
+    <dimen name="activity.splash.textview.title.text_size">35sp</dimen>
+    <dimen name="activity.main.textview.menu.text_size">35sp</dimen>
+
+    <!-- Splash screen activity layout-->
+    <dimen name="activity.splash.textview.content.margin_top">5dp</dimen>
+    <dimen name="activity.splash.textview.copyright.margin_bottom">10dp</dimen>
+    <dimen name="activity.splash.textview.title.margin_top">15dp</dimen>
+
+
+    <!-- Notification layout -->
+    <dimen name="notification.textview.margin">5dp</dimen>
+    <dimen name="notification.button.play.margin">5dp</dimen>
+    <dimen name="notification.layout.textviews.margin">8dp</dimen>
+    <dimen name="notification.layout.buttons.margin_bottom">10dp</dimen>
+    <dimen name="notification.button.exit.margin">10dp</dimen>
+    <dimen name="notification.button.cancel.size">20dp</dimen>
+    <dimen name="notification.button.next.size">45dp</dimen>
+    <dimen name="notification.button.previous.size">45dp</dimen>
+    <dimen name="notification.button.play.size">60dp</dimen>
+    <dimen name="notification.image.song.size">128dp</dimen>
+
+
+    <!-- Main activity layout-->
+    <dimen name="activity.main.image.song.margin">3dp</dimen>
+    <dimen name="activity.main.image.play.margin">5dp</dimen>
+    <dimen name="activity.main.menu.image.app.margin">5dp</dimen>
+    <dimen name="activity.main.textview.song.margin_bottom">5dp</dimen>
+    <dimen name="activity.main.textview.song.margin_top">5dp</dimen>
+    <dimen name="activity.main.image.upload.padding">10dp</dimen>
+    <dimen name="activity.main.toolbar.text_padding">20dp</dimen>
+    <dimen name="activity.main.image.previous.size">30dp</dimen>
+    <dimen name="activity.main.image.next.size">30dp</dimen>
+    <dimen name="activity.main.image.upload.size">35dp</dimen>
+    <dimen name="activity.main.image.play.size">45dp</dimen>
+    <dimen name="activity.main.image.song.size">50dp</dimen>
+    <dimen name="activity.main.menu.image.app.size">50dp</dimen>
+    <dimen name="activity.main.layout.console.width">130dp</dimen>
+
+    <!-- Play song activity layout -->
+    <dimen name="activity.play.textview.song.margin">5dp</dimen>
+    <dimen name="activity.play.textview.time.margin">5dp</dimen>
+    <dimen name="activity.play.image.play.margin">10dp</dimen>
+    <dimen name="activity.play.image.timer.margin">10dp</dimen>
+    <dimen name="activity.play.layout.view.margin_bottom">10dp</dimen>
+    <dimen name="activity.play.image.timer.size">30dp</dimen>
+    <dimen name="activity.play.image.back.size">30dp</dimen>
+    <dimen name="activity.play.image.previous.size">40dp</dimen>
+    <dimen name="activity.play.image.next.size">40dp</dimen>
+    <dimen name="activity.play.textview.time.width">60dp</dimen>
+    <dimen name="activity.play.image.play.size">70dp</dimen>
+    <dimen name="activity.play.layout.console.height">90dp</dimen>
+
+    <!-- Navigation layout -->
+    <dimen name="navigation.item.image.margin">10dp</dimen>
+    <dimen name="navigation.item.textview.margin">20dp</dimen>
+    <dimen name="navigation.item.image.size">30dp</dimen>
+    <dimen name="navigation.item.layout.size">50dp</dimen>
+    <dimen name="navigation.image.height">200dp</dimen>
+
+    <!-- Online fragment layout -->
+    <dimen name="fragment.online.item.margin">3dp</dimen>
+    <dimen name="fragment.online.item.textview.margin">3dp</dimen>
+    <dimen name="fragment.online.textview.title.margin">5dp</dimen>
+    <dimen name="fragment.online.item.image.listener.size">20dp</dimen>
+
+    <!-- Offline fragment layout -->
+    <dimen name="fragment.offline.textview.title.margin">5dp</dimen>
+    <dimen name="fragment.offline.item.image.song.margin">5dp</dimen>
+    <dimen name="fragment.offline.item.textview.margin">5dp</dimen>
+    <dimen name="fragment.offline.item.image.song.size">100dp</dimen>
+    <dimen name="fragment.offline.item.textview.width">100dp</dimen>
+    <dimen name="fragment.offline.item.height">110dp</dimen>
+
+    <!-- Upload file dialog layout-->
+    <dimen name="dialog.upload.layout.margin">5dp</dimen>
+    <dimen name="dialog.upload.edittext.padding">5dp</dimen>
+    <dimen name="dialog.upload.radius">10dp</dimen>
+    <dimen name="dialog.upload.textview.title.margin">10dp</dimen>
+    <dimen name="dialog.upload.layout.buttons.height">30dp</dimen>
+    <dimen name="dialog.upload.textview.width">80dp</dimen>
+
+    <!-- Play song fragment layout -->
+    <dimen name="fragment.play.buttons.padding">15dp</dimen>
+    <dimen name="fragment.play.image.song.padding">30dp</dimen>
+
+    <!-- List song fragment layout -->
+    <dimen name="fragment.list.item.textview.margin">3dp</dimen>
+    <dimen name="fragment.list.image.playing.size">30dp</dimen>
+
+    <!-- Timer dialog layout-->
+    <dimen name="dialog.timer.layout.radius">10dp</dimen>
+    <dimen name="dialog.timer.textview.title.margin">10dp</dimen>
+    <dimen name="dialog.timer.seekbar.margin_bottom">10dp</dimen>
+    <dimen name="dialog.timer.seekbar.margin_left">20dp</dimen>
+    <dimen name="dialog.timer.seekbar.margin_right">20dp</dimen>
+    <dimen name="dialog.timer.seekbar.height">50dp</dimen>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginLeft="@dimen/fragment.online.item.margin"
+    android:layout_marginRight="@dimen/fragment.online.item.margin"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvNameOnlSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment.online.item.textview.margin"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/fragment.online.item.textview.song.text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tvNameOnlSong"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/fragment.online.item.image.listener.size"
+            android:layout_height="@dimen/fragment.online.item.image.listener.size"
+            android:layout_margin="@dimen/fragment.online.item.textview.margin"
+            android:contentDescription="@string/image.item.online.icon_listener"
+            android:src="@drawable/ic_listener" />
+
+        <TextView
+            android:id="@+id/tvDurationOnlSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment.online.item.textview.margin"
+            android:layout_marginStart="@dimen/fragment.online.item.textview.margin"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fragment.online.item.textview.duration.text_size"
+            tools:text="@string/textview.item.online.text_default_time_value" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorLine" />
+</RelativeLayout>

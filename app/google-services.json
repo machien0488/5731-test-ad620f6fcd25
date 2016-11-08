@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741342544191",
+    "firebase_url": "https://myapp-a88ff.firebaseio.com",
+    "project_id": "myapp-a88ff",
+    "storage_bucket": "myapp-a88ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741342544191:android:cdcaabf3eabf7842",
+        "android_client_info": {
+          "package_name": "com.example.lylig_boss.playapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741342544191-rne0r28r6d2dut8t8qsnfct1epu4ulf9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lylig_boss.playapp",
+            "certificate_hash": "86BBD9AB6E1E088653E5226ED7C6936EF988841B"
+          }
+        },
+        {
+          "client_id": "741342544191-2luj3k81driqiqbvmqjq30o1k8up0v52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-D9w-4BBdR9CrS_i0dWOymSA7VBk-ktE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741342544191-2luj3k81driqiqbvmqjq30o1k8up0v52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

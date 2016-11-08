@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlueBackGround"
+    tools:context="com.example.lylig_boss.playapp.activities.PlaySongActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarPlayActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgBtnBack"
+                android:layout_width="@dimen/activity.play.image.back.size"
+                android:layout_height="@dimen/activity.play.image.back.size"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_exit"
+                android:contentDescription="@string/image.activity.play.icon_back" />
+
+            <TextView
+                android:id="@+id/tvNameSongPlayActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity.play.textview.song.margin"
+                android:layout_marginStart="@dimen/activity.play.textview.song.margin"
+                android:layout_toEndOf="@id/imgBtnBack"
+                android:layout_toLeftOf="@+id/imgBtnTimer"
+                android:layout_toRightOf="@+id/imgBtnBack"
+                android:layout_toStartOf="@+id/imgBtnTimer"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_title_text" />
+
+            <ImageButton
+                android:id="@+id/imgBtnTimer"
+                android:layout_width="@dimen/activity.play.image.timer.size"
+                android:layout_height="@dimen/activity.play.image.timer.size"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity.play.image.timer.margin"
+                android:layout_marginRight="@dimen/activity.play.image.timer.margin"
+                android:background="@drawable/ic_alarm"
+                android:contentDescription="@string/image.activity.play.icon_timer" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerPlayActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llConsoleBottom"
+        android:layout_below="@+id/toolBarPlayActivity" />
+
+    <LinearLayout
+        android:id="@+id/llConsoleBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDurationTime"
+                style="@style/TimeValueTheme"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvDurationTime"
+                android:layout_toLeftOf="@+id/tvTimeSong"
+                android:layout_toRightOf="@+id/tvDurationTime"
+                android:layout_toStartOf="@+id/tvTimeSong"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tvTimeSong"
+                style="@style/TimeValueTheme"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity.play.layout.console.height">
+
+            <ImageButton
+                android:id="@+id/imgBtnPlay"
+                android:layout_width="@dimen/activity.play.image.play.size"
+                android:layout_height="@dimen/activity.play.image.play.size"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/activity.play.image.play.margin"
+                android:layout_marginRight="@dimen/activity.play.image.play.margin"
+                android:background="@drawable/ic_play_play_activity"
+                android:contentDescription="@string/image.activity.icon_play" />
+
+            <ImageButton
+                android:id="@+id/imgBtnPrevious"
+                android:layout_width="@dimen/activity.play.image.previous.size"
+                android:layout_height="@dimen/activity.play.image.previous.size"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgBtnPlay"
+                android:layout_toStartOf="@+id/imgBtnPlay"
+                android:background="@drawable/bg_button_previous"
+                android:contentDescription="@string/image.activity.icon_previous" />
+
+            <ImageButton
+                android:id="@+id/imgBtnNext"
+                android:layout_width="@dimen/activity.play.image.next.size"
+                android:layout_height="@dimen/activity.play.image.next.size"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imgBtnPlay"
+                android:layout_toRightOf="@+id/imgBtnPlay"
+                android:background="@drawable/bg_button_next"
+                android:contentDescription="@string/image.activity.icon_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity.play.layout.view.margin_bottom" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTotalOfflineSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment.offline.textview.title.margin"
+        android:gravity="center"
+        android:text="@string/textview.text_total_song"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/size_title_text"
+        android:textStyle="italic" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewOffSong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

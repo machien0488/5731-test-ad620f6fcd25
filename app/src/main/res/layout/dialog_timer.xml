@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_timer_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTimerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog.timer.textview.title.margin"
+        android:gravity="center"
+        android:text="@string/dialog.timer.title_timer_default"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/size_title_text" />
+
+    <SeekBar
+        android:id="@+id/seekBarTimer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog.timer.seekbar.height"
+        android:layout_marginBottom="@dimen/dialog.timer.seekbar.margin_bottom"
+        android:layout_marginEnd="@dimen/dialog.timer.seekbar.margin_right"
+        android:layout_marginLeft="@dimen/dialog.timer.seekbar.margin_left"
+        android:layout_marginRight="@dimen/dialog.timer.seekbar.margin_right"
+        android:layout_marginStart="@dimen/dialog.timer.seekbar.margin_left"
+        android:max="90"
+        android:progress="0" />
+</LinearLayout>

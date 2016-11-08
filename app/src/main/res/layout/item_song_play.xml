@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgListPlay"
+                android:layout_width="@dimen/fragment.list.image.playing.size"
+                android:layout_height="@dimen/fragment.list.image.playing.size"
+                android:background="@drawable/ic_list_play"
+                android:contentDescription="@string/image.item.play.icon_playing"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvNumSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGreen"
+                android:textSize="@dimen/size_title_text"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvNamePlaySong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tvDurationSong"
+                android:layout_margin="@dimen/fragment.list.item.textview.margin"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDurationSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/fragment.list.item.textview.margin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_size_text"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:background="@color/colorLine" />
+</LinearLayout>

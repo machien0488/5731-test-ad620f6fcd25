@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    tools:context=".activities.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarMain"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_light" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tvTitleMenuPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgMenuMain"
+            android:layout_toStartOf="@+id/imgMenuMain"
+            android:text="@string/textview.main.activity.text_play"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/activity.main.textview.menu.text_size" />
+
+        <ImageView
+            android:id="@+id/imgMenuMain"
+            android:layout_width="@dimen/activity.main.menu.image.app.size"
+            android:layout_height="@dimen/activity.main.menu.image.app.size"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/image.activity.main.icon_menu_app"
+            android:paddingLeft="@dimen/activity.main.menu.image.app.margin"
+            android:paddingRight="@dimen/activity.main.menu.image.app.margin"
+            android:src="@drawable/ic_app_menu" />
+
+        <TextView
+            android:id="@+id/tvTitleMenuApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imgMenuMain"
+            android:layout_toRightOf="@+id/imgMenuMain"
+            android:text="@string/textview.main.activity.text_app"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/activity.main.textview.menu.text_size" />
+
+        <ImageButton
+            android:id="@+id/imgBtnUpload"
+            android:layout_width="@dimen/activity.main.image.upload.size"
+            android:layout_height="@dimen/activity.main.image.upload.size"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/activity.main.image.upload.padding"
+            android:layout_marginRight="@dimen/activity.main.image.upload.padding"
+            android:background="@drawable/bg_button_upload"
+            android:contentDescription="@string/image.activity.main.icon_upload" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rlConsole"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayoutMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@android:color/white"
+                    app:tabIndicatorColor="@color/colorBlueBackGround"
+                    app:tabIndicatorHeight="2dp" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPagerMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlConsole"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorBlueBackGround"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgSong"
+                    android:layout_width="@dimen/activity.main.image.song.size"
+                    android:layout_height="@dimen/activity.main.image.song.size"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/activity.main.image.song.margin"
+                    android:contentDescription="@string/image.activity.main.photo_song" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/imgSong"
+                    android:layout_toLeftOf="@+id/rlMainButtons"
+                    android:layout_toRightOf="@+id/imgSong"
+                    android:layout_toStartOf="@+id/rlMainButtons"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameSongBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity.main.textview.song.margin_bottom"
+                        android:layout_marginTop="@dimen/activity.main.textview.song.margin_top"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/activity.main.textview.text_size"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tvNameSinger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textview.main.activity.text_updating"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/activity.main.textview.text_size" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlMainButtons"
+                    android:layout_width="@dimen/activity.main.layout.console.width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:id="@+id/imgBtnPrevious"
+                        android:layout_width="@dimen/activity.main.image.previous.size"
+                        android:layout_height="@dimen/activity.main.image.previous.size"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/imgBtnPlay"
+                        android:layout_toStartOf="@+id/imgBtnPlay"
+                        android:contentDescription="@string/image.activity.icon_previous"
+                        android:src="@drawable/ic_previous_main_activity" />
+
+                    <ImageView
+                        android:id="@+id/imgBtnPlay"
+                        android:layout_width="@dimen/activity.main.image.play.size"
+                        android:layout_height="@dimen/activity.main.image.play.size"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/activity.main.image.play.margin"
+                        android:layout_marginRight="@dimen/activity.main.image.play.margin"
+                        android:contentDescription="@string/image.activity.icon_play"
+                        android:src="@drawable/ic_play_main_activity" />
+
+                    <ImageView
+                        android:id="@+id/imgBtnNext"
+                        android:layout_width="@dimen/activity.main.image.next.size"
+                        android:layout_height="@dimen/activity.main.image.next.size"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/imgBtnPlay"
+                        android:layout_toRightOf="@+id/imgBtnPlay"
+                        android:contentDescription="@string/image.activity.icon_next"
+                        android:src="@drawable/ic_next_main_activity" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewFullScreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/navigation.image.height"
+                android:background="@color/colorAccent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackGround" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

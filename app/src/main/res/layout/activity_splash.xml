@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlSplashLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlueBackGround">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image.activity.splash.icon_app"
+            android:src="@drawable/ic_app" />
+
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity.splash.textview.title.margin_top"
+            android:text="@string/textview.splash.text_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/activity.splash.textview.title.text_size" />
+
+        <TextView
+            android:id="@+id/tvAppContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity.splash.textview.content.margin_top"
+            android:text="@string/textview.splash.text_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/activity.splash.textview.content.text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity.splash.textview.copyright.margin_bottom"
+        android:text="@string/textview.splash.text_copyright"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_medium" />
+</RelativeLayout>

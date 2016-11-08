@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PlaySongFragment">
+
+    <ImageView
+        android:id="@+id/imgSongPlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llOptionButtons"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/image.fragment.play.icon_disk"
+        android:padding="@dimen/fragment.play.image.song.padding"
+        android:src="@drawable/ic_disk" />
+
+    <LinearLayout
+        android:id="@+id/llOptionButtons"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/image.fragment.play.icon_share"
+            android:padding="@dimen/fragment.play.buttons.padding"
+            android:src="@drawable/bg_button_share" />
+
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/image.fragment.play.icon_add"
+            android:padding="@dimen/fragment.play.buttons.padding"
+            android:src="@drawable/bg_button_add" />
+
+        <ImageView
+            android:id="@+id/imgDownload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/image.fragment.play.icon_download"
+            android:padding="@dimen/fragment.play.buttons.padding"
+            android:src="@drawable/ic_download" />
+
+        <ImageView
+            android:id="@+id/imgMv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/image.fragment.play.icon_video"
+            android:padding="@dimen/fragment.play.buttons.padding"
+            android:src="@drawable/bg_button_mv" />
+
+        <ImageView
+            android:id="@+id/imgVol"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/image.fragment.play.icon_volume"
+            android:padding="@dimen/fragment.play.buttons.padding"
+            android:src="@drawable/ic_vol" />
+    </LinearLayout>
+</RelativeLayout>

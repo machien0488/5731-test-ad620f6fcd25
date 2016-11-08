@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">PlayApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notificationtitle">Android Notification Tutorial</string>
+    <string name="notificationtext">Notification Text</string>
+    <string name="notificationticker">Notification Ticker</string>
+    <string name="customnotificationtitle">Android Notification Tutorial</string>
+    <string name="customnotificationtext">Custom Notification Text</string>
+    <string name="customnotificationticker">Custom Notification Ticker</string>
+    <string name="lbltitle">"Title : "</string>
+    <string name="lbltext">"Text : "</string>
+    <string name="notification">Notification</string>
+    <string name="customnotification">Custom Notification</string>
+
+    <string name="navigation.title_item">navigation item</string>
+
+    <string name="text.title.download_success">Đã tải xuống thành công!</string>
+    <string name="textview.splash.text_title">Play App</string>
+    <string name="textview.splash.text_content">Giai điệu cuộc sống</string>
+    <string name="textview.splash.text_copyright">Copyright @2016</string>
+    <string name="textview.main.activity.text_play">Play</string>
+    <string name="textview.main.activity.text_app">App</string>
+    <string name="textview.text_total_song">Số bài hát: </string>
+    <string name="textview.text_loading">Đang tải dữ liệu trực tuyến </string>
+    <string name="textview.play.activity.text_default_time_value">00:00</string>
+    <string name="textview.item.online.text_default_time_value">00:00</string>
+    <string name="textview.item.offline.text_genre_song">Thể loại: </string>
+    <string name="textview.item.offline.text_duration_song">Thời lượng: </string>
+    <string name="textview.item.offline.text_name_song">Tên bài hát: </string>
+    <string name="textview.main.activity.text_updating">Updating</string>
+
+    <string name="dialog.timer.title_timer_default">Hẹn giờ ngừng phát nhạc </string>
+    <string name="dialog.upload.title_upload_file">UPLOAD BÀI HÁT: </string>
+    <string name="dialog.upload.hint.text_image_link_upload_song">Hãy nhập vào link Url hình ảnh </string>
+    <string name="dialog.upload.hint.text_genre_upload_song">Hãy nhập vào thể loại bài hát </string>
+    <string name="dialog.upload.hint.text_updating">Updating </string>
+    <string name="dialog.upload.textview.text_singer_upload_song">Tên ca sĩ: </string>
+    <string name="dialog.upload.textview.text_upload_name_song">Bài hát: </string>
+    <string name="dialog.upload.textview.text_image_link_upload_song">Link ảnh: </string>
+    <string name="dialog.upload.textview.text_genre_song">Thể loại: </string>
+    <string name="dialog.upload.title_warning">!WARNING!</string>
+    <string name="dialog.upload.error.message_upload_fail">Upload thất bại. Vui lòng kiểm tra kết nối!</string>
+    <string name="dialog.upload.message_upload_success">Upload thành công!!!</string>
+    <string name="dialog.upload.button.title_ok">OK</string>
+    <string name="dialog.upload.button.title_cancel">CANCEL</string>
+
+    <string name="toast.error.message_network_error">Lỗi Server!!! Vui lòng chọn bài khác</string>
+    <string name="toast.main.activity.error.message_upload_file">!File vừa chọn bị lỗi hoặc không nằm trong thư mục được hỗ trợ!</string>
+    <string name="toast.main.activity.error.message_fill_name_song">Vui lòng không để trống mục tên bài hát</string>
+    <string name="toast.play.fragment.text_downloading">!Bài hát đang được tải về!</string>
+    <string name="toast.play.fragment.text_coming_soon">!COMING SOON!</string>
+    <string name="toast.message_exit">Nhấn một lần nữa để thoát</string>
+    <string name="toast.message.no_internet_connection">Vui lòng kiểm tra lại kết nối mạng</string>
+    <string name="toast.message_no_google_service">Vui lòng cài đặt Google Play Service cho thiết bị</string>
+
+    <string name="notification.download.text_downloading">Đang tải dữ liệu.</string>
+
+    <string name="image.item.online.icon_listener">image of listener icon on online song item layout</string>
+    <string name="image.item.offline.icon_song">image of offline song picture on offline song item layout</string>
+    <string name="image.item.menu.icon">image of menu icon on toolbar layout</string>
+    <string name="image.fragment.play.icon_disk">image of disk photo on play song fragment layout</string>
+    <string name="image.fragment.play.icon_share">image of share icon on play song fragment layout</string>
+    <string name="image.fragment.play.icon_add">image of add icon on play song fragment layout</string>
+    <string name="image.fragment.play.icon_download">image of download icon on play song fragment layout</string>
+    <string name="image.fragment.play.icon_video">image of video icon on play song fragment layout</string>
+    <string name="image.fragment.play.icon_volume">image of share icon on play song fragment layout</string>
+    <string name="image.activity.play.icon_timer">image of timer icon on play song activity layout</string>
+    <string name="image.activity.play.icon_back">image of back icon on play song activity layout</string>
+    <string name="image.activity.icon_play">image of play icon on activity layout</string>
+    <string name="image.activity.icon_previous">image of previous icon on activity layout</string>
+    <string name="image.activity.icon_next">image of next icon on activity layout</string>
+    <string name="image.activity.main.photo_song">image of song photo on main activity layout</string>
+    <string name="image.activity.main.icon_upload">image of upload icon on main activity layout</string>
+    <string name="image.activity.main.icon_menu_app">image of app icon on menu of main activity layout</string>
+    <string name="image.item.play.icon_playing">image of playing icon on play song item layout</string>
+    <string name="image.notification.photo_song">image of song photo on notification layout</string>
+    <string name="image.notification.icon_exit">image of exit icon on notification layout</string>
+    <string name="image.notification.icon_next">image of next icon on notification layout</string>
+    <string name="image.notification.icon_play">image of play icon on notification layout</string>
+    <string name="image.notification.icon_previous">image of previous icon on notification layout</string>
+    <string name="image.activity.splash.icon_app">image of app icon on splash screen activity layout</string>
+
+    <string-array name="item_list_menu">
+        <item>Home</item>
+        <item>Feedback</item>
+        <item>About</item>
+    </string-array>
+
+</resources>

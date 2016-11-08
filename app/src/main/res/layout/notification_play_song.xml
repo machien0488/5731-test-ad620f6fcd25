@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlNotificationBarEx"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlueBackGround">
+
+    <ImageView
+        android:id="@+id/imgNotificationPhotoSong"
+        android:layout_width="@dimen/notification.image.song.size"
+        android:layout_height="@dimen/notification.image.song.size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/image.notification.photo_song"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/rlButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgNotificationPhotoSong"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/notification.layout.buttons.margin_bottom"
+        android:layout_toEndOf="@+id/imgNotificationPhotoSong"
+        android:layout_toRightOf="@id/imgNotificationPhotoSong">
+
+        <ImageView
+            android:id="@+id/imgNotificationPrevious"
+            android:layout_width="@dimen/notification.button.previous.size"
+            android:layout_height="@dimen/notification.button.previous.size"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgNotificationPlay"
+            android:layout_toStartOf="@+id/imgNotificationPlay"
+            android:contentDescription="@string/image.notification.icon_previous"
+            android:src="@drawable/bg_button_previous" />
+
+        <ImageView
+            android:id="@+id/imgNotificationPlay"
+            android:layout_width="@dimen/notification.button.play.size"
+            android:layout_height="@dimen/notification.button.play.size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/notification.button.play.margin"
+            android:layout_marginRight="@dimen/notification.button.play.margin"
+            android:contentDescription="@string/image.notification.icon_play"
+            android:src="@drawable/ic_play_play_activity" />
+
+        <ImageView
+            android:id="@+id/imgNotificationNext"
+            android:layout_width="@dimen/notification.button.next.size"
+            android:layout_height="@dimen/notification.button.next.size"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imgNotificationPlay"
+            android:layout_toRightOf="@+id/imgNotificationPlay"
+            android:contentDescription="@string/image.notification.icon_next"
+            android:src="@drawable/bg_button_next" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgNotificationExit"
+        android:layout_width="@dimen/notification.button.cancel.size"
+        android:layout_height="@dimen/notification.button.cancel.size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/notification.button.exit.margin"
+        android:contentDescription="@string/image.notification.icon_exit"
+        android:src="@drawable/ic_exit_notification" />
+
+    <LinearLayout
+        android:id="@+id/llTextViews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/notification.layout.textviews.margin"
+        android:layout_marginStart="@dimen/notification.layout.textviews.margin"
+        android:layout_marginTop="@dimen/notification.layout.textviews.margin"
+        android:layout_toEndOf="@+id/imgNotificationPhotoSong"
+        android:layout_toLeftOf="@id/imgNotificationExit"
+        android:layout_toRightOf="@id/imgNotificationPhotoSong"
+        android:layout_toStartOf="@+id/imgNotificationExit"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNotificationSongName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/notification.textview.margin"
+            android:singleLine="true"
+            android:theme="@style/TextViewNotification" />
+
+        <TextView
+            android:id="@+id/tvNotificationSinger"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/notification.textview.margin"
+            android:theme="@style/TextViewNotification" />
+
+    </LinearLayout>
+</RelativeLayout>

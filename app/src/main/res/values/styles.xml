@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Base time value theme. -->
+    <style name="TimeValueTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">@dimen/activity.play.textview.time.width</item>
+        <item name="android:text">@string/textview.play.activity.text_default_time_value</item>
+        <item name="android:textSize">@dimen/size_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/activity.play.textview.time.margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity.play.textview.time.margin</item>
+    </style>
+
+    <!-- Base navigation item theme. -->
+    <style name="NavItemTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">@string/navigation.title_item</item>
+        <item name="android:textSize">@dimen/navigation.textview.text_size</item>
+        <item name="android:paddingLeft">@dimen/navigation.item.textview.margin</item>
+    </style>
+
+    <!-- Base dialog image view theme -->
+    <style name="TextViewDialog">
+        <!-- Customize your theme here. -->
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/size_text</item>
+        <item name="android:paddingLeft">@dimen/dialog.upload.edittext.padding</item>
+        <item name="android:textColorHint">@color/colorText</item>
+    </style>
+
+    <!-- Base notification text view theme -->
+    <style name="TextViewNotification">
+        <!-- Customize your theme here. -->
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/size_text</item>
+        <item name="android:textColorHint">@color/colorText</item>
+    </style>
+
+    <!-- Base item offline song text view theme. -->
+    <style name="ItemOfflineSongTextViewTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/fragment.offline.item.textview.text_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
